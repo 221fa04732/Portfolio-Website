@@ -36,10 +36,13 @@ body{
 .header-area{
   z-index: 10;
   position: fixed;
-  background-color: black;
-  height: 50px;
-  padding-top: 10px;
+  height: 80px;
   width: 100%;
+  font-size: 20px;
+  background-color: #202020;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  display: flex;
+  align-items: center;
 }
 
 .header-area.sticky {
@@ -56,32 +59,11 @@ body{
   display:flex;
   justify-content: space-between;
   align-items: center;
- 
 } 
-.logo {
-  display: flex;
-  align-items: center;
-  position: relative; 
-  text-transform: uppercase;
-  font-size: 26px;
-  font-weight: 700;
-  padding-left: 100px;
-}
 
-.logo .fa-bolt {
-  color: #fed700;
-  font-size: 19.5px;
-  position: absolute; 
-  top: 60%;
-  left: 100%; 
-  
-  z-index: 1; 
-}
-
-.signature {
-  width: 100px; 
-  height:auto; 
-  
+.signature{
+  height: 50px;
+  width: 250px;
 }
 
 .header ul li:first-child {
@@ -119,7 +101,7 @@ body{
    display:flex;
    justify-content: space-around;
    align-items: center;
-   padding-top: 5rem; 
+   padding-top: 9rem; 
 } 
 
 .FirstElement.adjusted-padding {
@@ -167,13 +149,19 @@ profile-photo .img{
   transform: rotate(360deg);
 }
 
+#social{
+  display: flex;
+  justify-content: bottom;
+}
+
 
 
  /*---------------------------About---------------------------*/
 
 .about-area{
-  padding-top: 130px;
+  padding-top: 8rem;
   background-color: #202020;
+  
 }
 .about{
   display: flex;
@@ -230,21 +218,23 @@ profile-photo .img{
   margin: 5px 0;
   margin-right: 7px;
   border-radius: 30px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #fed700;
   box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
-}
-.btn.active{
-  border-color: #fed700;
 }
 
 
 /*---------------------------Education & Internship---------------------------*/
+
+.education-content{
+  padding-top: 5rem;
+}
 
 .education-content .row{
   display: flex;
   border-radius: 5px;
   height: 400px;
   margin-bottom: 250px;
+  
 }
 
 .education-content .title{
@@ -326,8 +316,7 @@ profile-photo .img{
 
 /*---------------------------Projects---------------------------*/
 .project-content{
-  padding: 90px 0;
-  /* color:#fff;  */
+  padding: 50px 0px 90px 0px;
 }
 .project-title{
   margin-bottom: 60px;
@@ -349,7 +338,6 @@ profile-photo .img{
   flex-wrap: wrap;
 }
 .project{
-    /* padding: 30px 15px; */
     color: #e5e5e5;
     border: 2px solid #e5e5e5;
     border-radius: 10px;
@@ -359,7 +347,34 @@ profile-photo .img{
     text-align: center;
     flex-basis: 32%;
     transition: .3s;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.project img{
+  width: 100px;
+  height: 100px;
+}
+
+.project-btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.project-btn a{
+  background-color: #202020;
+  color: #fed700;
+  padding: 10px 20px;
+  border: #333 2px solid;
+  border-radius: 10px;
+}
+
 .project i{
   background-color: #fed700;
   width: 60px;
@@ -385,7 +400,7 @@ profile-photo .img{
 
 /*---------------------------Contact Me---------------------------*/
 .contact-content{
-  padding: 100px 0;
+  padding-bottom: 100px;
   color: #fff;
   text-align: center;
 }
